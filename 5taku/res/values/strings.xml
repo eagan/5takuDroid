@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">ごたくどろいど</string>
+<string name="start">開始</string>
+<string name="book_select_ok">OK</string>
+<string name="book_select_cancel">キャンセル</string>
+<string name="category_size_pre">全</string>
+<string name="category_size_post">問</string>
+<string name="menu_open">開く</string>
+<string name="menu_about">about</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="choice_style_normal"><item name="android:background">#ffffff</item>
+</style>
+<style name="choice_style_incorrect"><item name="android:background">#808080</item>
+</style>
+<color name="choice_background_normal">#ffffff</color>
+<color name="choice_background_incorrect">#808080</color>
+</resources>
