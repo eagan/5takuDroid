@@ -3,6 +3,7 @@
 	<name>5taku</name>
 	<comment></comment>
 	<projects>
+		<project>5taku-common</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
