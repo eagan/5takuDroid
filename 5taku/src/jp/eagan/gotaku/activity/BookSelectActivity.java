@@ -11,8 +11,10 @@ import jp.eagan.gotaku.R;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.text.Html;
 import android.text.Spanned;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -28,7 +30,7 @@ public class BookSelectActivity extends ListActivity {
 	public static final int RESULT_CANCELED = 0;
 	public static final int RESULT_SUCCESS = 1;
 	
-	private static final String DATADIR = "/sdcard/5taku";
+	private static final String DATADIR = Environment.getExternalStorageDirectory().getPath() + "/5taku";
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -104,6 +106,7 @@ public class BookSelectActivity extends ListActivity {
 		Intent intent = new Intent();
 		intent.putExtra(EXTRA_OUT_DIRNAME, DATADIR);
 		intent.putExtra(EXTRA_OUT_FILENAME, filename);
+		Log.d("5taku", "DIRNAME = " + DATADIR + ", FILENAME = " + filename);
 		
 		setResult(RESULT_SUCCESS, intent);
 		finish();
