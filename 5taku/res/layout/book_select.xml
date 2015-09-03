@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="wrap_content"
-  android:layout_height="wrap_content" android:orientation="vertical">
-<ListView android:layout_height="wrap_content" android:id="@android:id/list" android:layout_width="fill_parent" android:choiceMode="singleChoice"></ListView><TextView android:layout_height="wrap_content" android:id="@+id/no_book_help" android:layout_width="fill_parent"></TextView>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
 
-<LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="fill_parent" android:id="@+id/buttons_layout">
-<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ok_button" android:text="@string/book_select_ok" android:layout_gravity="left" android:width="128sp"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/cancel_button" android:layout_gravity="right" android:text="@string/book_select_cancel" android:width="128sp"></Button>
+<ListView
+    android:id="@android:id/list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:choiceMode="singleChoice" >
+
+</ListView>
+<TextView
+        android:id="@+id/no_book_help"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+</TextView>
+<LinearLayout
+    android:id="@+id/buttons_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+<Button
+    android:id="@+id/ok_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:text="@string/book_select_ok"
+    android:width="128sp" >
+</Button>
+<Button
+    android:id="@+id/cancel_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/book_select_cancel"
+            android:width="128sp" >
+</Button>
 </LinearLayout>
 </LinearLayout>
